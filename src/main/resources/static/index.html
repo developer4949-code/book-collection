@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Book Collection</h1>
+
+<!-- Form to Add a New Book -->
+<form id="book-form">
+    <input type="text" id="title" placeholder="Title" required />
+    <input type="text" id="author" placeholder="Author" required />
+    <input type="text" id="genre" placeholder="Genre" required />
+    <button type="submit">Add Book</button>
+</form>
+
+<!-- Book List -->
+<ul id="book-list"></ul>
+<div id="update-form" style="display: none;">
+    <h3>Update Book</h3>
+    <input type="hidden" id="update-id">
+    <input type="text" id="update-title" placeholder="Title" required>
+    <input type="text" id="update-author" placeholder="Author" required>
+    <input type="text" id="update-genre" placeholder="Genre" required>
+    <button id="update-button">Update</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
