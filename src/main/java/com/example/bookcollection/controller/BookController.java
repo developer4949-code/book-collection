@@ -19,7 +19,7 @@ public class BookController {
     public List<Book> getAllBooks() {
         return repository.findAll();
     }
-
+    //hello friends
     @PostMapping
     public Book addBook(@RequestBody Book book) {
         return repository.save(book);
